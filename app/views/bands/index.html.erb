@@ -1,0 +1,13 @@
+<h3>Click the star to mark your favorites.</h3>
+<ul>
+  <% @bands.each do |band| %>    
+    <li>
+      <h2><%= band.name %></h2>
+        <%= link_to "", favorite_band_path(band),
+              :remote => true,
+              :method => :put,
+              :class => "star #{band.favorite ? "fave" : "whatevs"}" %>
+      <div class="clear"></div>
+    </li>
+  <% end %>
+</ul>

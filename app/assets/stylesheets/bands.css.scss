@@ -1,0 +1,91 @@
+// Place all the styles related to the Bands controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*
+D1F2A5  lime
+EFFAB4  honey do
+FFC48C  sublime sherbert
+FF9F80  feeling orange
+F56991  watermillion
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Abel);
+
+body {
+  background-color: #000;
+  color: #D1F2A5; 
+  margin:20px;
+  font-family: 'Abel', sans-serif;
+  
+}
+
+h1 {
+  color: #FF9F80;
+  text-align: center;
+  font-size: 5em;
+}
+
+h2 {
+  font-family: 'Abel', sans-serif;
+  color: #F56991;
+  margin-right:100px;
+  display: inline;
+  font-size: 3em;
+  text-shadow: #b73a5e 0 -1px 1px;
+}
+
+h3 {
+  font-size:2em;
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+ul {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style-type: none;
+  padding:10px 10px 10px 20px;
+  margin:0 0 10px;
+  text-align: left;
+  border: 1px solid #3f3f43;
+  background-color: #313238;
+  -webkit-border-radius: 20px; 
+     -moz-border-radius: 20px; 
+          border-radius: 20px; 
+}
+
+a {
+  float: right;
+  width: 50px;
+  height:50px;
+  color: #EFFAB4;
+  -webkit-border-radius: 25px; 
+     -moz-border-radius: 25px; 
+          border-radius: 25px; 
+}
+
+a.star {
+  background: transparent url(/assets/star.png) no-repeat 0 -240px;
+  width:60px;
+  height:60px;  
+}
+
+a.fave {
+  background-position: 0 -60px;
+}
+a.fave:hover {
+  background-position: 0 0;
+}
+a.whatevs {
+  background-position: 0 -180px;
+}
+a.whatevs:hover {
+  background-position: 0 -120px;
+}
